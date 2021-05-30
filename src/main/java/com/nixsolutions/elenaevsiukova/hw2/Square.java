@@ -21,7 +21,10 @@ final class Square {
     boolean isNeighbour(Square square) {
         int distanceX = Math.abs(x - square.x);
         int distanceY = Math.abs(y - square.y);
-        return distanceX == 1 || distanceY == 1;
+
+        boolean sameRow = distanceX == 1 && distanceY == 0;
+        boolean sameColumn = distanceX == 0 && distanceY == 1;
+        return sameRow || sameColumn;
     }
 }
 
