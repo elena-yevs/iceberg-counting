@@ -1,9 +1,6 @@
 package com.nixsolutions.elenaevsiukova.hw2;
 
 import java.util.Arrays;
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
-import java.util.stream.IntStream;
 
 public class Main {
     // private static final Logger LOG = LogManager.getLogger(Main.class);
@@ -20,7 +17,7 @@ public class Main {
         Arrays.deepToString(sea); //массив выводится в строку
         //field.countIcebergs(sea);
 
-        Square square=new Square(0,0);
+
 
 
 
