@@ -4,7 +4,8 @@ public class Test {
 
     public static void main(String[] args) {
         Test test = new Test();
-        test.neighbours();
+        //test.neighbours();
+        test.isIceberg(4, 6, 0);
     }
 
     void neighbours() {
@@ -24,4 +25,15 @@ public class Test {
 
         System.out.printf("(%d, %d) and (%d, %d) neighbors? = %b.%n", x1, y1, x2, y2, result);
     }
+
+    boolean isIceberg(int x, int y, int value) {
+        Iceberg iceberg = new Iceberg(2, 5, 1);
+        if (iceberg.value == 1) {
+            System.out.println("iceberg");
+            return true;
+        }
+        System.out.println("not iceberg");
+        return false;
+    }
+
 }
